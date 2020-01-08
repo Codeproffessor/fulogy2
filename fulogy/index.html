@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Order Notification</title>
+  </head>
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    .body {
+      background-color: #f3f3f3;
+    }
+    .header {
+      text-align: center;
+      width: 100%;
+      font-size: 26px;
+      padding: 30px 20px 35px 20px;
+    }
+
+    .table-header {
+      padding-bottom: 10px;
+      padding-top: 30px;
+    }
+    .wrapper {
+      border-collapse: collapse;
+      width: 700px;
+    }
+    .wrapper__body.info tr td,
+    .wrapper__body.parts tr td,
+    .wrapper__body.description tr td {
+      border: 1px solid black;
+    }
+    .wrapper__footer tr td {
+      padding-top: 20px;
+    }
+
+    .order {
+      color: white;
+      background-color: #1a70cd;
+    }
+    .greetings__header {
+      padding-bottom: 10px;
+      font-size: 20px;
+    }
+    .greetings tr {
+      width: 100%;
+    }
+
+    .summary {
+      border-bottom: 30px solid transparent;
+    }
+/
+    @media only screen and (max-width: 800px) {
+      .wrapper {
+        border-collapse: collapse;
+        width: 400px;
+      }
+    }
+  </style>
+  <body class="body">
+
+    <table class="header order" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td>Ваш заказ&nbsp;<b>№&nbsp;T-RP/00129</b> &nbsp;оформлен</td>
+      </tr>
+    </table>
+
+    <table class="wrapper" cellpadding="5" align="center">
+      <tbody class="wrapper__body greetings">
+        <!-- ================= GREETINGS ================= -->
+        <th class="greetings__header" colspan="2">
+          <b>Здравствуйте, <br />Покупатель Покупателевич</b>
+        </th>
+        <tr>
+          <td colspan="2">
+            Спасибо, что выбрали нас! В ближайшее время с Вами свяжется менеджер
+            для подтверждения заказа
+          </td>
+        </tr>
+      </tbody>
+      <br />
+      <!-- ================= INFO ================= -->
+      <tbody class="wrapper__body info">
+        <th class="table-header" colspan="2">Информация о заказе:</th>
+        <tr>
+          <td>Заказчик:</td>
+          <td>Рафик Миракян</td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td>mrhshoes@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Адрес:</td>
+          <td>г. Ереван Рубинянц 27/4А дом 58</td>
+        </tr>
+        <tr>
+          <td>Телефон:</td>
+          <td>+374 77 74 27 00</td>
+        </tr>
+        <tr>
+          <td>Исполнитель:</td>
+          <td>Рафик Миракян</td>
+        </tr>
+        <tr>
+          <td>Менеджер:</td>
+          <td>Широков Евгений</td>
+        </tr>
+        <tr>
+          <td>Телефон:</td>
+          <td>+7(499)116-34-00</td>
+        </tr>
+        <tr>
+          <td>Монтаж:</td>
+          <td>Да</td>
+        </tr>
+      </tbody>
+
+      <tbody class="wrapper__body parts">
+        <th class="table-header" colspan="2">Состав комплекта:</th>
+        <tr>
+          <td>Светильник по вашему размеру:</td>
+          <td>2 шт</td>
+        </tr>
+        <tr>
+          <td>Блок питания 100 Вт.:</td>
+          <td>1 шт</td>
+        </tr>
+        <tr>
+          <td>Крепления:</td>
+          <td>саморезы каждые 30 см</td>
+        </tr>
+        <tr>
+          <td>Конфигурация светильника (вариант 2):</td>
+          <td>scheme</td>
+        </tr>
+        <tr>
+          <td>Комментарий:</td>
+          <td>Можно мне гаечный ключ вместо отвертки</td>
+        </tr>
+      </tbody>
+      <tbody class="wrapper__body description">
+        <th class="table-header" colspan="2">Технические характеристики:</th>
+        <tr>
+          <td>Длина 1-го светильника (L1):</td>
+          <td>1375 мм</td>
+        </tr>
+        <tr>
+          <td>Длина 2-го светильника (L2):</td>
+          <td>2110 мм</td>
+        </tr>
+        <tr>
+          <td>Вид профиля:</td>
+          <td>Накладной профиль с молочным рассеивателем</td>
+        </tr>
+        <tr>
+          <td>Лента:</td>
+          <td>
+            Светодиодная лента 24V SMD 2835 140LED/m 18W IP33 Day White LUX CRI
+            90
+          </td>
+        </tr>
+        <tr>
+          <td>Суммарная потребляемая мощность:</td>
+          <td>63 Вт</td>
+        </tr>
+        <tr>
+          <td>Вывод питающего кабеля из светильника:</td>
+          <td>через заглушку</td>
+        </tr>
+        <tr>
+          <td>Стык светильников:</td>
+          <td>под углом 45 градусов</td>
+        </tr>
+        <tr>
+          <td>Длина кабеля до блока питания (Lcb):</td>
+          <td>240 см</td>
+        </tr>
+      </tbody>
+      <tfoot class="wrapper__footer summary">
+        <tr>
+          <td>ИТОГО:</td>
+          <td class="summary__price" align="right">
+            <b>
+            14 000 РУБ
+            </b>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

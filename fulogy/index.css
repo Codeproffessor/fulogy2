@@ -1,0 +1,71 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.body {
+  background-color: #f3f3f3;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  font-size: 26px;
+  padding: 30px 20px 35px 20px;
+}
+
+/* ========== TABLE ========== */
+
+.table-header {
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.wrapper {
+  border-collapse: collapse;
+  width: 700px;
+}
+
+.wrapper__body.info tr td,
+.wrapper__body.parts tr td,
+.wrapper__body.description tr td {
+  border: 1px solid black;
+}
+
+.wrapper__footer tr td {
+  padding-top: 20px;
+}
+
+
+.order tbody,
+.order {
+  color: white;
+  background-color: #1a70cd;
+}
+
+.greetings__header {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.greetings tr {
+  width: 100%;
+}
+
+
+
+.summary {
+  border-bottom: 30px solid transparent;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    border-collapse: collapse;
+    width: 400px;
+  }
+}
